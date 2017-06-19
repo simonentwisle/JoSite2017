@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="JoSite2017.ContactForm" %>
+
+<!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com--><!-- Last Published: Tue May 23 2017 13:51:40 GMT+0000 (UTC) -->
 <html data-wf-domain="jojos-site.webflow.io" data-wf-page="59241c02679c326a7a8c3f24" data-wf-site="59235a66da66b9016b526a6d">
 <head>
@@ -20,6 +22,7 @@ WebFont.load({
     <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
+    <form id="form1" runat="server">
     <div class="main-wrapper"><div class="main navbar w-nav" data-animation="default" data-collapse="none" data-duration="400">
         <div class="homepage-wrapper w-container"><a class="brand w-nav-brand" href="#">
             <img class="homepage-logo main" src="http://uploads.webflow.com/59235a66da66b9016b526a6d/5923f394a6879e6bd117f351_logo.svg"></a>
@@ -28,7 +31,7 @@ WebFont.load({
                 <a class="homepage-link w-nav-link" href="/voicereel.html">Voicereel</a>
                 <a class="homepage-link w-nav-link" href="/photos.html">Photos</a>
                 <a class="homepage-link w-nav-link" href="#">Woofstock!</a>
-                <a class="homepage-link w-nav-link" href="/contact.html">Contact</a>
+                <a class="homepage-link w-nav-link" href="/contact.aspx">Contact</a>
             </nav>
             <div class="menu-button w-nav-button">
                 <div class="homepage-menu-button-text">
@@ -55,15 +58,25 @@ WebFont.load({
             </p>
         </div>
         <div class="contact-column">
-            <h3>For any other enquiries:</h3>
+            <!--<h3>For any other enquiries:</h3>-->
+            <asp:Literal ID="Literal1" runat="server" Text="<h3>For any other enquiries:</h3>"></asp:Literal>
             <div class="form-block w-form">
-                <form data-name="Email Form" id="email-form" name="email-form" action="mailto:bibiplone@hotmail.com" method="post" enctype="text/plain">
-                    <label for="name">Name:</label>
-                    <input class="field w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text">
-                    <label for="email">Email Address:</label><input class="field w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email">
-                    <label for="field">Message:</label>
-                    <textarea class="field multi w-input" id="field" maxlength="5000" name="field" placeholder="Example Text"></textarea>
-                    <input class="submit w-button" data-wait="Please wait..." type="submit" value="Submit"></form>
+                <!--<form data-name="Email Form" id="email-form" name="email-form" action="mailto:bibiplone@hotmail.com" method="post" enctype="text/plain">-->
+                    <!--<label for="name">Name:</label>-->
+                    <asp:Label ID="Label1" runat="server" Text="Name:" Font-Bold="true"></asp:Label>
+                    <!--<input class="field w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text">-->
+                    <asp:TextBox ID="Name" runat="server" CssClass="field w-input" MaxLength="256"></asp:TextBox>
+                    <!--<label for="email">Email Address:</label>-->
+                    <asp:Label ID="Label2" runat="server" Text="Email Address:" Font-Bold="true"></asp:Label>
+                    <!--<input class="field w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email">-->
+                    <asp:TextBox id="Email" runat="server" CssClass="field w-input" MaxLength="256"></asp:TextBox>
+                    <!--<label for="field">Message:</label>-->
+                    <asp:Label ID="Label3" runat="server" Text="Message:" Font-Bold="true"></asp:Label>
+                    <!--<textarea class="field multi w-input" id="field" maxlength="5000" name="field" placeholder="Example Text"></textarea>-->
+                    <asp:TextBox id="Message" runat="server" TextMode="MultiLine" CssClass="field multi w-input" MaxLength="5000" ></asp:TextBox>
+                    <!--<input class="submit w-button" data-wait="Please wait..." type="submit" value="Submit">-->
+                    <asp:Button ID="Button1" runat="server" Text="Submit"  CssClass="submit w-button" OnClick="Button1_Click"/>
+                <!--</form>-->
                     <div class="w-form-done">
                         <div>Thank you! Your submission has been received!</div>
                     </div>
@@ -82,9 +95,11 @@ WebFont.load({
             </div>
         </div>
     </div>
+    </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
     <script src="https://daks2k3a4ib2z.cloudfront.net/59235a66da66b9016b526a6d/js/webflow.d6724e82f.js" type="text/javascript"></script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>
+
 

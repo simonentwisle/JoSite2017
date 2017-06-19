@@ -11,7 +11,7 @@ namespace JoSite2017
 {
 
 
-    public partial class ContactForm
+    public partial class WebForm1
     {
 
         /// <summary>
