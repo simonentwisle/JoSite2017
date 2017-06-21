@@ -66,8 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contact.html" />
     <Content Include="contact.aspx" />
+    <Content Include="contact.html" />
     <Content Include="empty.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />

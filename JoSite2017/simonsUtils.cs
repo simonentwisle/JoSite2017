@@ -13,7 +13,7 @@ using System.IO;
 
 namespace JoSite2017
 {
-    internal class simonsUtils
+    public class simonsUtils
     {
         #region Methods
 

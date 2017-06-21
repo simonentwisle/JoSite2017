@@ -6,9 +6,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace JoSite2017
 {
-    public partial class contact : System.Web.UI.Page
+    public partial class Contact : System.Web.UI.Page
     {
         private simonsUtils myUtils = new simonsUtils();
         private string ErrorMessage = "";
@@ -21,7 +22,7 @@ namespace JoSite2017
         protected void Button1_Click(object sender, EventArgs e)
         {
             //do some validation
-
+           
             if (doValidation() == true)
             {
                 //send email
@@ -29,7 +30,7 @@ namespace JoSite2017
             }
             else
             {
-
+               
             }
         }
 
@@ -40,15 +41,14 @@ namespace JoSite2017
             //Reset back colour of controls to be validated
             myUtils.resetControlsBackColours(Page.Controls[0]);
             //check we have values for the required fields
-            if (Name.Text == "" || Name.Text == "Please enter your name.")
+            if (Name.Text == "" || Name.Text  == "Please enter your name.")
             {
                 myUtils.highlightControl(Name);
                 Name.ForeColor = System.Drawing.Color.LightGray;
                 Name.Text = "Please enter your name.";
                 isEverythingCool = false;
                 return isEverythingCool;
-            }
-            else
+            }else
             {
                 Name.BorderColor = System.Drawing.Color.FromName("#cccccc");
             }
@@ -62,7 +62,7 @@ namespace JoSite2017
             }
             else
             {
-                Email.BorderColor = System.Drawing.Color.FromName("#cccccc");
+                Email.BorderColor = System.Drawing.Color.FromName("#cccccc"); 
             }
             if (Message.Text == "")
             {
