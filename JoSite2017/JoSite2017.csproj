@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,6 +43,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -48,29 +51,242 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="contact.aspx" />
     <Content Include="contact.html" />
     <Content Include="empty.html" />
     <Content Include="index.html" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV1.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV10.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV2.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV3.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV4.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV5.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV6.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV7.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV8.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1080_720\DV9.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV1.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV10.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV2.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV3.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV4.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV5.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV6.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV7.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV8.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\1600_1067\DV9.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV1.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV10.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV2.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV3.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV4.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV5.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV6.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV7.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV8.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2000_1333\DV9.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV1.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV10.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV2.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV3.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV4.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV5.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV6.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV7.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV8.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\2600_1733\DV9.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV1.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV10.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV2.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV3.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV4.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV5.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV6.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV7.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV8.PNG" />
+    <Content Include="media\images\Dwarf_Vader_stills\DV9.PNG" />
+    <Content Include="media\images\headshots\1080_720\JoannaNewA.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoannaNewB.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoannaNewC.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoanneEntwisle-156copy.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoanneEntwisleHeadshot1.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoanneEntwisleHeadshot2.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoanneEntwisleHeadshot3.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoEnt-Headshot2.jpg" />
+    <Content Include="media\images\headshots\1080_720\JoEntHeadshotD-Levi.jpg" />
+    <Content Include="media\images\headshots\1080_720\JojoHeadshot1.jpg" />
+    <Content Include="media\images\headshots\1080_720\JojoHeadshot2.JPG" />
+    <Content Include="media\images\headshots\1080_720\JojoHeadshot4.JPG" />
+    <Content Include="media\images\headshots\1080_720\NGOSS1.jpg" />
+    <Content Include="media\images\headshots\1080_720\NGOSS2.jpg" />
+    <Content Include="media\images\headshots\1080_720\NGOSS3.JPG" />
+    <Content Include="media\images\headshots\1600_1067\JoannaNewA.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoannaNewB.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoannaNewC.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoanneEntwisle-156copy.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoanneEntwisleHeadshot1.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoanneEntwisleHeadshot2.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoanneEntwisleHeadshot3.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoEnt-Headshot2.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JoEntHeadshotD-Levi.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JojoHeadshot1.jpg" />
+    <Content Include="media\images\headshots\1600_1067\JojoHeadshot2.JPG" />
+    <Content Include="media\images\headshots\1600_1067\JojoHeadshot4.JPG" />
+    <Content Include="media\images\headshots\2000_1333\JoannaNewA.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoannaNewB.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoannaNewC.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoanneEntwisle-156copy.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoanneEntwisleHeadshot1.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoanneEntwisleHeadshot2.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoanneEntwisleHeadshot3.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoEnt-Headshot2.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JoEntHeadshotD-Levi.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JojoHeadshot1.jpg" />
+    <Content Include="media\images\headshots\2000_1333\JojoHeadshot2.JPG" />
+    <Content Include="media\images\headshots\2000_1333\JojoHeadshot4.JPG" />
+    <Content Include="media\images\headshots\2600_1733\JoannaNewA.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoannaNewB.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoannaNewC.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoanneEntwisle-156copy.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoanneEntwisleHeadshot1.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoanneEntwisleHeadshot2.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoanneEntwisleHeadshot3.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoEnt-Headshot2.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JoEntHeadshotD-Levi.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JojoHeadshot1.jpg" />
+    <Content Include="media\images\headshots\2600_1733\JojoHeadshot2.JPG" />
+    <Content Include="media\images\headshots\2600_1733\JojoHeadshot4.JPG" />
+    <Content Include="media\images\headshots\JoannaNewA.jpg" />
+    <Content Include="media\images\headshots\JoannaNewB.jpg" />
+    <Content Include="media\images\headshots\JoannaNewC.jpg" />
+    <Content Include="media\images\headshots\JoanneEntwisle-156copy.jpg" />
+    <Content Include="media\images\headshots\JoanneEntwisleHeadshot1.jpg" />
+    <Content Include="media\images\headshots\JoanneEntwisleHeadshot2.jpg" />
+    <Content Include="media\images\headshots\JoanneEntwisleHeadshot3.jpg" />
+    <Content Include="media\images\headshots\JoEnt-Headshot2.jpg" />
+    <Content Include="media\images\headshots\JoEntHeadshotD-Levi.jpg" />
+    <Content Include="media\images\headshots\JojoHeadshot1.jpg" />
+    <Content Include="media\images\headshots\JojoHeadshot2.JPG" />
+    <Content Include="media\images\headshots\JojoHeadshot4.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1080_720\NGOSS1.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1080_720\NGOSS2.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1080_720\NGOSS3.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1080_720\NGOSS4.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1600_1067\NGOSS1.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1600_1067\NGOSS2.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1600_1067\NGOSS3.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\1600_1067\NGOSS4.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2000_1333\NGOSS1.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2000_1333\NGOSS2.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2000_1333\NGOSS3.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2000_1333\NGOSS4.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2600_1733\NGOSS1.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2600_1733\NGOSS2.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2600_1733\NGOSS3.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\2600_1733\NGOSS4.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\FullSizeRender.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\FullSizeRender[1].jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\IMG_0505.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\IMG_0508.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\NGOSS1.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\NGOSS2.jpg" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\NGOSS3.JPG" />
+    <Content Include="media\images\Nothing_Gold_On_set_stills\NGOSS4.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1080_720\BB1.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1080_720\BB2.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1080_720\BB3.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1080_720\BB4.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1080_720\BB5.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1080_720\BBFullSizeRender.jpg" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1600_1067\BB1.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1600_1067\BB2.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1600_1067\BB3.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1600_1067\BB4.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1600_1067\BB5.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\1600_1067\BBFullSizeRender.jpg" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2000_1333\BB1.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2000_1333\BB2.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2000_1333\BB3.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2000_1333\BB4.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2000_1333\BB5.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2000_1333\BBFullSizeRender.jpg" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2600_1733\BB1.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2600_1733\BB2.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2600_1733\BB3.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2600_1733\BB4.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2600_1733\BB5.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\2600_1733\BBFullSizeRender.jpg" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\BB1.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\BB2.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\BB3.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\BB4.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\BB5.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\BBFullSizeRender.jpg" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\FullSizeRender.jpg" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5243.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5249.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5250.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5251.JPG" />
+    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5253.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG1.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG2.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG3.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG4.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG5.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG6.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG7.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1080_720\NG8.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG1.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG2.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG3.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG4.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG5.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG6.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG7.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\1600_1067\NG8.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG1.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG2.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG3.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG4.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG5.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG6.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG7.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2000_1333\NG8.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG1.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG2.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG3.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG4.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG5.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG6.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG7.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\2600_1733\NG8.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG1.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG2.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG3.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG4.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG5.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG6.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG7.JPG" />
+    <Content Include="media\images\Production_Stills_Nothing_Gold\NG8.JPG" />
     <Content Include="packages.config" />
+    <Content Include="PhotoCode.html" />
     <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\JoSite2017 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -85,47 +301,7 @@
     <Content Include="scripts\js\webflow.d6724e82f.js" />
     <Content Include="showreel.html" />
     <Content Include="style\css\jojos-site.webflow.001.css" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1555.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1557.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1561.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1562.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1563.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1564.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1566.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1569.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1570.PNG" />
-    <Content Include="media\images\Dwarf_Vader_stills\IMG_1573.PNG" />
-    <Content Include="media\images\headshots\JoannaNewB.jpg" />
-    <Content Include="media\images\headshots\JoannaNewA.jpg" />
-    <Content Include="media\images\headshots\JoannaNewC.jpg" />
-    <Content Include="media\images\headshots\JoanneEntwisleHeadshot1.jpg" />
-    <Content Include="media\images\headshots\JoanneEntwisle-156copy.jpg" />
-    <Content Include="media\images\headshots\JoEnt-Headshot2.jpg" />
-    <Content Include="media\images\headshots\JoEntHeadshotD-Levi.jpg" />
-    <Content Include="media\images\headshots\JoanneEntwisleHeadshot2.jpg" />
-    <Content Include="media\images\headshots\JoanneEntwisleHeadshot3.jpg" />
-    <Content Include="media\images\headshots\JojoHeadshot1.jpg" />
-    <Content Include="media\images\headshots\JojoHeadshot2.JPG" />
-    <Content Include="media\images\headshots\JojoHeadshot4.JPG" />
     <Content Include="media\images\logo.svg" />
-    <Content Include="media\images\Nothing_Gold_On_set_stills\FullSizeRender.jpg" />
-    <Content Include="media\images\Nothing_Gold_On_set_stills\FullSizeRender[1].jpg" />
-    <Content Include="media\images\Nothing_Gold_On_set_stills\IMG_0505.JPG" />
-    <Content Include="media\images\Nothing_Gold_On_set_stills\IMG_0508.JPG" />
-    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\FullSizeRender.jpg" />
-    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5243.JPG" />
-    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5249.JPG" />
-    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5250.JPG" />
-    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5251.JPG" />
-    <Content Include="media\images\Production_Stills_from_The_Bromley_Boys\IMG_5253.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2850.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2857.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2859.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2861.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2862.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2863.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2867.large.JPG" />
-    <Content Include="media\images\Production_Stills_Nothing_Gold\IMG_2871.large.JPG" />
     <Content Include="voicereel.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -149,6 +325,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\audio\" />
+    <Folder Include="media\images\Dwarf_Vader_stills\1136_640\" />
+    <Folder Include="media\images\Dwarf_Vader_stills\500_282\" />
+    <Folder Include="media\images\Dwarf_Vader_stills\800_451\" />
+    <Folder Include="media\images\Nothing_Gold_On_set_stills\1136_640\" />
+    <Folder Include="media\images\Nothing_Gold_On_set_stills\500_282\" />
+    <Folder Include="media\images\Nothing_Gold_On_set_stills\800_451\" />
+    <Folder Include="media\images\Production_Stills_from_The_Bromley_Boys\1136_640\" />
+    <Folder Include="media\images\Production_Stills_from_The_Bromley_Boys\500_282\" />
+    <Folder Include="media\images\Production_Stills_from_The_Bromley_Boys\800_451\" />
+    <Folder Include="media\images\Production_Stills_Nothing_Gold\1136_640\" />
+    <Folder Include="media\images\Production_Stills_Nothing_Gold\500_282\" />
+    <Folder Include="media\images\Production_Stills_Nothing_Gold\800_451\" />
+    <Folder Include="Sizes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
